@@ -14,7 +14,7 @@ public class KarekramController {
         this.karekramRepository = karekramRepository;
     }
 
-    @GetMapping("/")
+    @GetMapping("/karekrams")
     public ResponseEntity<?> getKarekrams(){
 
         return ResponseEntity.ok().body(karekramRepository.findAll());
