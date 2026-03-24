@@ -3,9 +3,9 @@ package com.rcoem.day1demo.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("health")
+@RestController
 public class HealthController {
-    @GetMapping("/")
+    @GetMapping("/health")
     public String health() {
         return "ok";
     }
